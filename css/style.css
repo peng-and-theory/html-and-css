@@ -1,0 +1,115 @@
+/*
+  > COLOR PALLETE
+  BC8443 | tussock
+  CA9C68 | antique-brass
+  D8B58D | straw
+  CCCCCC | silver
+  E6E6E6 | mercury
+
+  > FONTS
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Cinzel', serif
+*/
+
+/* reset | utility */
+*, :before, :after { box-sizing: border-box; }
+html {
+  font-size: 20px;
+  font-weight: 300;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+}
+img { max-width: 100%; }
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 980px;
+}
+.header, .footer { color: #333; }
+
+/* HEADER */
+.header {
+  padding: 15px 0;
+  background: #CA9C68;
+}
+.header__title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+}
+.header__title a { display: inline-block; }
+.header__nav a {
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+}
+.header__nav a:after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #444;
+  transition: ease width 200ms;
+}
+.header__nav a:hover:after { width: 100%; }
+
+/* MAIN */
+.recipe { padding: 20px 0; }
+.recipe__title {
+  margin: 10px 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipe__image {
+  margin: 0 auto 10px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  background: #CA9C68;
+  border: 2px solid #CA9C68;
+}
+.recipe__image img {display: block;}
+.recipe__description {}
+
+.recipe__ingredients,
+.recipe__instructions,
+.recipe__tags { margin: 20px 0; }
+.recipe__heading { margin: 10px 0; }
+
+.recipe__tags ul { margin: 10px 0; }
+.recipe__tags li { display: inline-block; }
+.recipe__tags a {
+  display: block;
+  border: 1px solid #D8B58D;
+  border-radius: 4px;
+  padding: 5px;
+  background: #D8B58D;
+}
+.recipe__tags a:hover { background: #CA9C68; }
+
+
+/* FOOTER */
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  background: #BC8443;
+}
+
+@media (min-width: 768px) {
+  .recipe__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}

@@ -4,73 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto:300,400">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Recipe World</title>
   </head>
   <body>
 
-    <header>
-      <h1>Recipe World</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Recipes</a>
-        <a href="#">About</a>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title"><a href="#">Recipe World</a></h1>
+        <nav class="header__nav">
+          <a href="#">Home</a>
+          <a href="#">Recipes</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <article>
-        <!-- title, image, description -->
-        <h2>Sinuglaw</h2>
-        <div>
-          <img src="http://1.bp.blogspot.com/-dXdWegVTbZM/VTRX0IjWnmI/AAAAAAAAA0o/oNU4BkiFua4/w1200-h630-p-k-no-nu/sinuglaw.jpg" alt="Sinuglaw">
-        </div>
-        <div>
-          <p><strong>Sinuglaw is a dish composed of grilled pork belly and fish ceviche. </strong>This can be considered as a main dish or an appetizer. The name <em>“sinuglaw” </em>was derived from two famous cooking methods in the Visayas and Mindanao areas: sugba, meaning to grill; and kinilaw, which means to cook by soaking in vinegar or citric acid.</p>
-        </div>
-        <!-- ingredients, instructions -->
-        <section>
-          <div>
-            <h3>Ingredients:</h3>
+      <article class="recipe">
+        <div class="container">
+          <!-- title, image, description -->
+          <h2 class="recipe__title">Sinuglaw</h2>
+          <div class="recipe__image">
+            <img src="http://1.bp.blogspot.com/-dXdWegVTbZM/VTRX0IjWnmI/AAAAAAAAA0o/oNU4BkiFua4/w1200-h630-p-k-no-nu/sinuglaw.jpg" alt="Sinuglaw">
+          </div>
+          <div class="recipe__description">
+            <p><strong>Sinuglaw is a dish composed of grilled pork belly and fish ceviche. </strong>This can be considered as a main dish or an appetizer. The name <em>“sinuglaw” </em>was derived from two famous cooking methods in the Visayas and Mindanao areas: sugba, meaning to grill; and kinilaw, which means to cook by soaking in vinegar or citric acid.</p>
+          </div>
+          <!-- ingredients, instructions -->
+          <section class="recipe__section">
+            <div class="recipe__ingredients">
+              <h3 class="recipe__heading">Ingredients:</h3>
+              <ul>
+                <li>1 lb Inihaw na liempo grilled pork belly, chopped</li>
+                <li>1 lb fresh tuna meat cubed</li>
+                <li>2 cups cucumber seeded and thinly sliced</li>
+                <li>1 1/4 cup vinegar cane, white, or coconut vinegar</li>
+                <li>1 medium sized red onion sliced</li>
+                <li>2 tablespoons ginger julienned</li>
+                <li>4 pieces finger chilies sliced</li>
+                <li>1 piece lemon</li>
+                <li>4 to 6 pieces Thai or Bird’s eye chili chopped</li>
+                <li>1 teaspoon salt</li>
+              </ul>
+            </div>
+            <div class="recipe__instructions">
+              <h3 class="recipe__heading">Instructions:</h3>
+              <ol>
+                <li>Place the tuna meat in a bowl then pour-in 1/2 cup of vinegar. Soak for 8 minutes.</li>
+                <li>Using a spoon of fork, press the tuna meat lightly.</li>
+                <li>Drain the vinegar then combine cucumber, onion, ginger, finger chili, Thai or Bird’s eye chili, and salt. Mix well.</li>
+                <li>Squeeze the lemon until all the juices are extracted then pour-in the remaining 3/4 cup vinegar. Mix well and soak for 10 minutes.</li>
+                <li>Put-in the Grilled pork belly and mix thoroughly. Let the mixture stand for at least 1 hour (you may place this inside the refrigerator).</li>
+                <li>Transfer to a serving plate then serve.</li>
+                <li>Share and enjoy!</li>
+              </ol>
+            </div>
+          </section>
+          <!-- tags -->
+          <aside class="recipe__tags">
+            <h3 class="recipe__heading">Tags:</h3>
             <ul>
-              <li>1 lb Inihaw na liempo grilled pork belly, chopped</li>
-              <li>1 lb fresh tuna meat cubed</li>
-              <li>2 cups cucumber seeded and thinly sliced</li>
-              <li>1 1/4 cup vinegar cane, white, or coconut vinegar</li>
-              <li>1 medium sized red onion sliced</li>
-              <li>2 tablespoons ginger julienned</li>
-              <li>4 pieces finger chilies sliced</li>
-              <li>1 piece lemon</li>
-              <li>4 to 6 pieces Thai or Bird’s eye chili chopped</li>
-              <li>1 teaspoon salt</li>
+              <li><a href="#">Pork</a></li>
+              <li><a href="#">Filipino</a></li>
+              <li><a href="#">Asian</a></li>
             </ul>
-          </div>
-          <div>
-            <h3>Instructions:</h3>
-            <ol>
-              <li>Place the tuna meat in a bowl then pour-in 1/2 cup of vinegar. Soak for 8 minutes.</li>
-              <li>Using a spoon of fork, press the tuna meat lightly.</li>
-              <li>Drain the vinegar then combine cucumber, onion, ginger, finger chili, Thai or Bird’s eye chili, and salt. Mix well.</li>
-              <li>Squeeze the lemon until all the juices are extracted then pour-in the remaining 3/4 cup vinegar. Mix well and soak for 10 minutes.</li>
-              <li>Put-in the Grilled pork belly and mix thoroughly. Let the mixture stand for at least 1 hour (you may place this inside the refrigerator).</li>
-              <li>Transfer to a serving plate then serve.</li>
-              <li>Share and enjoy!</li>
-            </ol>
-          </div>
-        </section>
-        <!-- tags -->
-        <aside>
-          <h3>Tags:</h3>
-          <ul>
-            <li>Pork</li>
-            <li>Filipino</li>
-            <li>Asian</li>
-          </ul>
-        </aside>
+          </aside>
+        
+        </div>
       </article>
     </main>
 
-    <footer>
-      <p>© 2018 Code and Theory Manila</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2018 Code and Theory Manila</p>
+      </div>
     </footer>
 
   </body>
